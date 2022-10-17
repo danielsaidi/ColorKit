@@ -1,0 +1,32 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Creating a custom color provider") {
+        In this chapter, we'll learn how to create a custom color provider.
+        
+        @Image(source: "Logo.jpg", alt: "ColorKit logo")
+    }
+    
+    @Section(title: "Installing ColorKit") {
+        @ContentAndMedia {
+            ...
+            
+            @Image(source: "Logo.jpg", alt: "ColorKit logo")
+        }
+        
+        @Steps {
+            @Step {
+                ...
+                @Code(name: "", file: c1s1.swift) {
+                    @Image(source: "Logo.jpg", alt: "ColorKit logo")
+                }
+            }
+            @Step {
+                ...
+                @Code(name: "", file: c1s2.swift)
+            }
+            @Step {
+                ...
+                @Code(name: "", file: c1s3.swift)
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@Tutorials(name: "ColorKit") {
+    
+    @Intro(title: "Meet ColorKit") {
+        ColorKit makes it easy to work with colors in SwiftUI.
+        This tutorial will help you get started with the library by building a color app. 
+        
+        @Image(source: "Logo.jpg", alt: "ColorKit logo")
+    }
+    
+    @Volume(name: "Getting Started") {
+        
+        Learn how to get started with the most essential parts of the library.
+        
+        @Image(source: "Logo.jpg", alt: "ColorKit logo")
+        
+        @Chapter(name: "ColorKit Essentials") {
+            @Image(source: "Logo.jpg", alt: "ColorKit logo")
+            
+            In this chapter, we'll learn how to import the library, register a license key and create our first color provider.
+            
+            @TutorialReference(tutorial: "doc:Setting-Up-ColorKit")
+            @TutorialReference(tutorial: "doc:Creating-A-Custom-Color-Provider")
+        }
+    }
+    
+    @Volume(name: "Going Further") {
+        
+        Learn how to build outer-wordly experiences with ColorKit.
+        
+        @Image(source: "Logo.jpg", alt: "ColorKit logo")
+        
+        @Chapter(name: "Going Further") {
+            @Image(source: "Logo.jpg", alt: "ColorKit logo")
+            
+            In this chapter, we'll learn how to take things further by returning colors that not even exist.
+            
+            @TutorialReference(tutorial: "doc:Inventing-New-Colors")
+        }
+    }
+}

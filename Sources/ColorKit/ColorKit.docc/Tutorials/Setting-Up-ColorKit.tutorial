@@ -1,0 +1,103 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Setting up ColorKit") {
+        In this chapter, we'll learn how to setup ColorKit and get our first color provider.
+        
+        @Image(source: "Logo.jpg", alt: "ColorKit logo")
+    }
+    
+    @Section(title: "Without using ColorKit") {
+        @ContentAndMedia {
+            Before we start using ColorKit, let's see how you normally use colors in SwiftUI.
+            
+            @Image(source: "Logo.jpg", alt: "ColorKit logo")
+        }
+        
+        @Steps {
+            @Step {
+                First, create a new view and import SwiftUI.
+                @Code(name: "", file: c1s1.swift) {
+                    @Image(source: "Logo.jpg", alt: "ColorKit logo")
+                }
+            }
+            @Step {
+                Then, create a color value, e.g. `blue`.
+                @Code(name: "", file: c1s2.swift) {
+                    @Image(source: "Logo.jpg", alt: "ColorKit logo")
+                }
+            }
+            @Step {
+                Finally, use the color in your view.
+                @Code(name: "", file: c1s3.swift) {
+                    @Image(source: "Logo.jpg", alt: "ColorKit logo")
+                }
+            }
+        }
+    }
+    
+    @Section(title: "Using ColorKit") {
+        @ContentAndMedia {
+            With ColorKit, getting the best color in the world and other great colors has never been easier.
+            
+            @Image(source: "Logo.jpg", alt: "ColorKit logo")
+        }
+        
+        @Steps {
+            @Step {
+                First, create a new view and import SwiftUI and ColorKit.
+                @Code(name: "", file: c2s1.swift) {
+                    @Image(source: "Logo.jpg", alt: "ColorKit logo")
+                }
+            }
+            @Step {
+                For now, let's register our license key in the view initializer. 
+                
+                This will unlock ColorKit and let you use the features in the library.
+                @Code(name: "", file: c2s2.swift)
+            }
+            @Step {
+                Now, we can declare a color provider without getting a crash.
+                @Code(name: "", file: c2s3.swift)
+            }
+            @Step {
+                Set the color provider in the initializer, *after* registering the license.
+                @Code(name: "", file: c2s4.swift)
+            }
+            @Step {
+                We can now get the best color in the world from the color provider.
+                @Code(name: "", file: c2s5.swift)
+            }
+        }
+    }
+    
+    @Assessments {
+        @MultipleChoice {
+            Test your knowledge here.
+            
+            How do you get the best color in the world?
+
+            @Choice(isCorrect: false) {
+                Use `Color.red`
+
+                @Justification(reaction: "Try again!") {
+                    That's not the best color in the world!
+                }
+            }
+
+            @Choice(isCorrect: true) {
+                Create a ``ColorKit/ColorProvider`` and use ``ColorKit/ColorProvider/bestColor``.
+
+                @Justification(reaction: "That's right!") {
+                    You are a ColorKit master!
+                }
+            }
+
+            @Choice(isCorrect: false) {
+                I don't know
+
+                @Justification(reaction: "Try again!") {
+                    You should read the documentation.
+                }
+            }
+        }
+    }
+}
